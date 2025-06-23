@@ -258,7 +258,7 @@ font-weight:600 ;
 
    /* ----------------------------------------------------skill section-------------------------------------------------- */
 
-   .skill-section{
+.skill-section{
     width: var(--width);
     background-color: var(--bg-color);
     padding-top: 3rem;
@@ -280,7 +280,7 @@ font-weight:600 ;
     }
      .skill{
      width: 500px;
-     height: 300px;
+     /* height: 300px; */
      margin: 20px auto;
      color: var(--text-dark);
      box-shadow: 0 10px 20px #e9ecef ;;
@@ -309,6 +309,12 @@ font-weight:600 ;
     float: left;
     background: linear-gradient(100deg,#F878FF, #FFDA9E);
    }
+
+   .python{
+     width: 98%;
+    animation: html 3s;
+
+   }
    .html{
     width: 97%;
     animation: html 3s;
@@ -319,7 +325,7 @@ font-weight:600 ;
     animation: html 3s;
    }
    .javascript{
-    width: 50%;
+    width: 80%;
     animation: html 3s;
    }
    @keyframes html{
@@ -351,49 +357,80 @@ font-weight:600 ;
       /* -------===========================---------project section-------------------------------------------------- */
 
    .project-section{
+    width: var(--width);
     background-color: var(--second-bg-color);
-    width:var(--width);
-    padding: 3rem 0;
+    
    }
 
-   .project-section h1{
-    color: var(--text-dark);
+  .project-section h1{
     text-align: center;
-    font-weight: 700;
     font-size: 2rem;
-    
+    margin-top: 2rem;
+  
    }
-   .project-section h1 span{
-    color: var(--main-color)
-   }
-    
-   .p-container{
-    
-    margin-left: 1rem;
-   }
+    .project-section h1 span{
+      color: var(--main-color);
+    }
 
-   
-   .project-title{
-    font-family: "Kalnia Glaze", serif;
-    color: var(--text-dark);
-    font-weight:900;
-    margin-top: 3rem;
-    
-   }
+  .project-card {
+  margin-top: 3rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
-   .project-description{
-    color: var(--text-dark);
-   }
-   
-   .project-img img{
-    display: grid;
-    height: 300px;
-    width: 40%;
-    border: 2px solid var(--main-color);
-    margin-top: 1rem;}
+.project-img {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project-img img {
+  width: 31%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--main-color);
+
+}
 
 
-   /* ---------===================================-------contact section-------------------------------------------------- */
+.zoom-click:hover {
+  transform: scale(1.1);
+  cursor: zoom-out;
+  z-index: 100;
+}
+
+
+.project-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+
+.explore-btn{
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: transparent;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.explore-btn:hover {
+  background-color: var(--main-color);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+/* ---------===================================-------contact section-------------------------------------------------- */
 
   
    .contact-section{
@@ -524,4 +561,7 @@ transform: scale(1.4);
   margin-right: 2rem;
  }
 
+
  
+
+  
